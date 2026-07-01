@@ -1,0 +1,2 @@
+def Multi():
+    pass
