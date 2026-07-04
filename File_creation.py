@@ -20,7 +20,6 @@ def create_file():
 
         with open(file_path, "w") as f:
             f.write(f"# This is {file_name} in the '{folder_name}' folder.\n")
-
     print(f"\n✅ Folder '{folder_name}' created successfully.")
     print(f"✅ {num_files} '.{extension}' files created.")
 
