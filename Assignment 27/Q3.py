@@ -1,8 +1,11 @@
 # This is Q3.py in the 'Assignment 27' folder.
 class Numbers:
+
     def __init__(self):
         self.value = 0
+
     def check_prime(self):
+
         try:
             self.value = int(input("Enter the Number:"))
             
@@ -18,11 +21,13 @@ class Numbers:
                     print("Number is Prime")
                 else:
                     print("Number is Not Prime")
+
         except Exception as e:
             print("Exception is:",e)
 
         
     def chkperfect(self):
+
         try:
             self.value = int(input("Enter the Number:"))
             Sum = 0
@@ -33,20 +38,24 @@ class Numbers:
                 print("Number is Perfect...")
             else:
                 print("Number is Not Perfect....")
+
         except Exception as e:
             print("Exception is:",e)
         
     def Factors(self):
+
         try:
             self.value = int(input("Enter the Number:"))
             fact=1
             for i in range(1,self.value):
                 fact +=  fact * i
             print("Factorial is:",fact)
+
         except Exception as e:
             print("Exception is:",e)
       
     def Sum_Factors(self):
+
         try:
             self.value = int(input("Enter the Number:"))
             fact=1
@@ -58,12 +67,13 @@ class Numbers:
                 fact +=  fact * i
                 new.append(fact)
             new1=1+sum(new)
-            print("Sum of the Factorial is:",new1)
-            #print(type(new))     
+            print("Sum of the Factorial is:",new1)   
+
         except Exception as e:
             print("Exception is:",e)
         
 obj=Numbers()
+
 while True:
     print("1. Check Prime")
     print("2. Check Perfect")
@@ -71,6 +81,7 @@ while True:
     print("4. Sum of Factorial Till The Number u Entered...")
     print("5. Exit...")
     print("--"*40)
+
     try:
         num=int(input("Enter the Choice:"))
         if num == 1:
@@ -86,6 +97,7 @@ while True:
             break
         else:
             print("Enter the Valid Choice...")
+
     except Exception as e:
         print("Exception is:",e)
 
