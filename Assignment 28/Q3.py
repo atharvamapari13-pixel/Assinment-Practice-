@@ -7,6 +7,7 @@ def main():
     for i in fobj:
         print(i)
         time.sleep(10)
+    fobj.close()
 if __name__ == '__main__':
     main()
 

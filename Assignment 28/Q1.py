@@ -11,7 +11,7 @@ def main():
     count = 0
     for i in pobj:
         count = count + 1
-    print(count)
+    print("Total number of Lines:",count)
     pobj.close()
     
 
