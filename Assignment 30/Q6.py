@@ -6,8 +6,8 @@ def Lunch():
 def wrap():
     print("wrap up at 06:00 PM")
 def main():
-    schedule.every("01:00").days.do(Lunch)
-    schedule.every("06:00").days.do(wrap)
+    schedule.every().day.at("13:00").do(Lunch)
+    schedule.every().day.at("18:00").do(wrap)
     while True:
         schedule.run_pending()
 if __name__=="__main__":
